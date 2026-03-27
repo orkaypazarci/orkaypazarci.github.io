@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Contact — Orkay Pazarcı</title>
+  <meta name="description"
+    content="Contact Orkay Pazarcı — Istanbul-based composer. Score inquiries, press, hire and newsletter." />
+  <script>(function () { var p = new URLSearchParams(window.location.search), t = p.get('theme'); if (t === 'dark') { document.documentElement.setAttribute('data-theme', 'dark') } else if (t === 'light') { document.documentElement.removeAttribute('data-theme') } else { try { if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark') } catch (e) { } } })()</script>
+
+  <!-- MailerLite Universal -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2225538');
+  </script>
+  <!-- End MailerLite Universal -->
+
+  <style>
+    /* ── NEWPARIS FONT FAMILY ── */
+    @font-face {
+      font-family: 'NewParisHeadline';
+      src: url('assets/fonts/NewParisHeadline-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'NewParisHeadline';
+      src: url('assets/fonts/NewParisHeadline-RegularItalic.ttf') format('truetype');
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: 'NewParisHeadline';
+      src: url('assets/fonts/NewParisHeadline-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'NewParisHeadline';
+      src: url('assets/fonts/NewParisHeadline-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'NewParisText';
+      src: url('assets/fonts/NewParisText-Book.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'NewParisText';
+      src: url('assets/fonts/NewParisText-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'NewParisText';
+      src: url('assets/fonts/NewParisText-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'NewParisSkyline';
+      src: url('assets/fonts/NewParisSkyline-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'NewParisSkyline';
+      src: url('assets/fonts/NewParisSkyline-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'NewParisSkyline';
+      src: url('assets/fonts/NewParisSkyline-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── RESET ── */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ── TOKENS ── */
+    :root {
+      --bg: #ede5d8;
+      --bg2: #e4dace;
+      --text: #18140e;
+      --dim: #7a6e60;
+      --accent: #9a6d3e;
+      --border: rgba(154, 109, 62, .2);
+      --nav-h: 80px;
+      --grain-blend: multiply;
+      --grain-opacity: .042;
+      --nav-gradient: linear-gradient(180deg, var(--bg) 60%, transparent);
+    }
+
+    [data-theme="dark"] {
+      --bg: #0e0e0e;
+      --bg2: #161616;
+      --text: #e8e4df;
+      --dim: #b5b0a8;
+      --accent: #c8a46e;
+      --border: rgba(200, 164, 110, .18);
+      --grain-blend: overlay;
+      --grain-opacity: .035;
+      --nav-gradient: linear-gradient(180deg, var(--bg) 60%, transparent);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'NewParisSkyline', Georgia, serif;
+      font-weight: 400;
+      min-height: 100vh;
+      transition: background .4s, color .4s;
+    }
+
+    /* Grain */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: var(--grain-opacity);
+      mix-blend-mode: var(--grain-blend);
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 500;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      column-gap: 28px;
+      align-items: center;
+      padding: 0 44px;
+      height: var(--nav-h);
+      pointer-events: none;
+      background: var(--nav-gradient);
+    }
+
+    .nav-logo {
+      pointer-events: auto;
+      font-family: 'NewParisHeadline', Georgia, serif;
+      font-weight: 400;
+      font-size: 1.4rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--text);
+      white-space: nowrap;
+      justify-self: start;
+      text-decoration: none;
+      transition: color .3s;
+    }
+
+    .nav-links {
+      pointer-events: auto;
+      list-style: none;
+      display: flex;
+      gap: 34px;
+      justify-self: center;
+    }
+
+    .nav-links a {
+      font-family: 'NewParisSkyline', Georgia, serif;
+      font-size: 1rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--text);
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 3px;
+      transition: color .26s;
+      white-space: nowrap;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--accent);
+      transition: width .3s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--accent);
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    /* ── HAMBURGER ── */
+    .hamburger {
+      position: fixed;
+      top: 0;
+      right: 44px;
+      height: var(--nav-h);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px 4px;
+      justify-content: center;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 1px;
+      background: var(--text);
+      transition: transform .36s, opacity .26s, background .26s, width .26s;
+      transform-origin: center;
+    }
+
+    .hamburger:hover span {
+      background: var(--accent);
+    }
+
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+      width: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    @media (max-width:1024px) {
+      .nav-links {
+        display: none;
+      }
+    }
+
+    /* ── SP-NAV ── */
+    .sp-nav {
+      display: none;
+    }
+
+    @media (max-width:1024px) {
+      .sp-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-bottom: 24px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border);
+        opacity: 0;
+        transform: translateY(6px);
+        transition: opacity .4s .26s, transform .4s .26s;
+      }
+
+      .side-panel.open .sp-nav {
+        opacity: 1;
+        transform: none;
+      }
+
+      .sp-nav a {
+        font-family: 'NewParisSkyline', Georgia, serif;
+        font-size: 1rem;
+        letter-spacing: .15em;
+        text-transform: uppercase;
+        color: var(--text);
+        text-decoration: none;
+        transition: color .22s;
+      }
+
+      .sp-nav a:hover,
+      .sp-nav a.active {
+        color: var(--accent);
+      }
+    }
+
+    /* ── OVERLAY ── */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 550;
+      background: rgba(0, 0, 0, .16);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .4s;
+    }
+
+    .overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    [data-theme="dark"] .overlay {
+      background: rgba(0, 0, 0, .55);
+    }
+
+    /* ── SIDE PANEL ── */
+    .side-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 355px;
+      height: 100vh;
+      background: var(--bg2);
+      border-left: 1px solid var(--border);
+      z-index: 600;
+      display: flex;
+      flex-direction: column;
+      padding: 90px 48px 52px;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      transform: translateX(100%);
+      transition: transform .48s cubic-bezier(.77, 0, .175, 1), background .4s;
+    }
+
+    .side-panel.open {
+      transform: translateX(0);
+    }
+
+    .sp-name {
+      font-family: 'NewParisHeadline', Georgia, serif;
+      font-weight: 400;
+      font-size: 1.4rem;
+      letter-spacing: .15em;
+      line-height: 1.18;
+      white-space: nowrap;
+      text-transform: uppercase;
+      color: var(--text);
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity .4s .2s, transform .4s .2s;
+    }
+
+    .side-panel.open .sp-name {
+      opacity: 1;
+      transform: none;
+    }
+
+    .sp-rule {
+      width: 22px;
+      height: 1px;
+      background: var(--accent);
+      margin-bottom: 28px;
+      opacity: 0;
+      transition: opacity .4s .28s;
+    }
+
+    .side-panel.open .sp-rule {
+      opacity: 1;
+    }
+
+    .sp-label {
+      font-family: 'NewParisSkyline', Georgia, serif;
+      font-size: 0.85rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 7px;
+      opacity: 0;
+      transition: opacity .4s .33s;
+    }
+
+    .side-panel.open .sp-label {
+      opacity: 1;
+    }
+
+    .sp-block {
+      font-family: 'NewParisText', Georgia, serif;
+      font-weight: 300;
+      font-size: 1.05rem;
+      color: var(--dim);
+      line-height: 1.9;
+      margin-bottom: 24px;
+      opacity: 0;
+      transition: opacity .4s .38s;
+    }
+
+    .sp-block a {
+      color: var(--dim);
+      text-decoration: none;
+      transition: color .22s;
+    }
+
+    .sp-block a:hover {
+      color: var(--accent);
+    }
+
+    .sp-block.last {
+      margin-bottom: 0;
+    }
+
+    .side-panel.open .sp-block {
+      opacity: 1;
+    }
+
+    .sp-social {
+      display: flex;
+      gap: 18px;
+      margin-top: auto;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+      opacity: 0;
+      transition: opacity .4s .46s;
+    }
+
+    .side-panel.open .sp-social {
+      opacity: 1;
+    }
+
+    .sp-social a {
+      color: var(--dim);
+      text-decoration: none;
+      display: flex;
+      transition: color .22s, transform .22s;
+    }
+
+    .sp-social a:hover {
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .sp-social svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    /* ── CONTACT PAGE LAYOUT ── */
+    .contact-page {
+      max-width: 720px;
+      padding: calc(var(--nav-h) + 64px) 44px 120px;
+    }
+
+    .contact-title {
+      font-family: 'NewParisHeadline', Georgia, serif;
+      font-weight: 400;
+      font-size: 2.8rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--text);
+      margin-bottom: 14px;
+      animation: rise .72s cubic-bezier(.4, 0, .2, 1) both;
+    }
+
+    .contact-rule {
+      width: 32px;
+      height: 1px;
+      background: var(--accent);
+      margin-bottom: 56px;
+      animation: rise .72s .12s cubic-bezier(.4, 0, .2, 1) both;
+    }
+
+    /* ── SECTION ── */
+    .contact-section {
+      margin-bottom: 64px;
+      animation: rise .72s .22s cubic-bezier(.4, 0, .2, 1) both;
+    }
+
+    .contact-section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .section-label {
+      font-family: 'NewParisSkyline', Georgia, serif;
+      font-size: 0.78rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .section-divider {
+      width: 100%;
+      height: 1px;
+      background: var(--border);
+      margin-bottom: 28px;
+    }
+
+    /* ── CONTACT INFO ── */
+    .info-email-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-bottom: 0;
+    }
+
+    .info-email-label {
+      font-family: 'NewParisSkyline', Georgia, serif;
+      font-size: 0.75rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--dim);
+      flex-shrink: 0;
+    }
+
+    .info-email-link {
+      font-family: 'NewParisText', Georgia, serif;
+      font-weight: 300;
+      font-size: 0.95rem;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: border-color .22s, color .22s;
+    }
+
+    .info-email-link:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
+
+    /* ── CONTACT BOXES (bottom) ── */
+    .contact-box-col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-box-email {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 12px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--dim);
+      font-family: 'NewParisText', Georgia, serif;
+      font-weight: 300;
+      font-size: 0.92rem;
+      transition: border-color .22s, color .22s;
+      text-align: center;
+    }
+
+    .contact-box-email:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .contact-socials-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .contact-box-social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 8px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--dim);
+      font-family: 'NewParisSkyline', Georgia, serif;
+      font-size: 0.72rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      transition: border-color .22s, color .22s;
+      text-align: center;
+    }
+
+    .contact-box-social:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ── FORM ── */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .form-group label {
+      font-family: 'NewParisSkyline', Georgia, serif;
+      font-size: 0.72rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--dim);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      font-family: 'NewParisText', Georgia, serif;
+      font-weight: 300;
+      font-size: 0.95rem;
+      color: var(--text);
+      background: transparent;
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      outline: none;
+      transition: border-color .22s;
+      width: 100%;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .form-group select {
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237a6e60' stroke-width='1.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      padding-right: 28px;
+    }
+
+    [data-theme="dark"] .form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23b5b0a8' stroke-width='1.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    }
+
+    .form-group select option {
+      background: var(--bg2);
+      color: var(--text);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: var(--dim);
+      opacity: .45;
+    }
+
+    .form-group textarea {
+      resize: none;
+      height: 120px;
+      line-height: 1.7;
+    }
+
+    .form-submit {
+      margin-top: 8px;
+      align-self: flex-start;
+      font-family: 'NewParisSkyline', Georgia, serif;
+      font-size: 0.82rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--bg);
+      background: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 12px 32px;
+      cursor: pointer;
+      transition: background .24s, color .24s, border-color .24s;
+    }
+
+    .form-submit:hover {
+      background: transparent;
+      color: var(--accent);
+    }
+
+    /* ── SUBSCRIBE ── */
+    .subscribe-desc {
+      font-family: 'NewParisText', Georgia, serif;
+      font-weight: 300;
+      font-size: 0.95rem;
+      color: var(--dim);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .subscribe-row {
+      display: flex;
+      gap: 0;
+      border-bottom: 1px solid var(--border);
+      transition: border-color .22s;
+    }
+
+    .subscribe-row:focus-within {
+      border-bottom-color: var(--accent);
+    }
+
+    .subscribe-input {
+      flex: 1;
+      font-family: 'NewParisText', Georgia, serif;
+      font-weight: 300;
+      font-size: 0.95rem;
+      color: var(--text);
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 10px 0;
+    }
+
+    .subscribe-input::placeholder {
+      color: var(--dim);
+      opacity: .6;
+    }
+
+    .subscribe-btn {
+      font-family: 'NewParisSkyline', Georgia, serif;
+      font-size: 0.75rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 10px 0 10px 18px;
+      transition: color .22s;
+      white-space: nowrap;
+    }
+
+    .subscribe-btn:hover {
+      color: var(--text);
+    }
+
+    .sub-feedback {
+      font-family: 'NewParisText', Georgia, serif;
+      font-weight: 300;
+      font-size: 0.85rem;
+      margin-top: 10px;
+      min-height: 1.2em;
+    }
+
+    /* ── MAILERLITE OVERRIDES ── */
+
+    .ml-wrapper .ml-form-embedWrapper {
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+
+    .ml-wrapper .ml-form-embedBody {
+      padding: 0 !important;
+      background: transparent !important;
+    }
+
+    .ml-wrapper .ml-form-embedContent {
+      margin: 0 0 12px !important;
+    }
+
+    .ml-wrapper .ml-form-embedContent h4 {
+      font-family: 'NewParisSkyline', Georgia, serif !important;
+      font-size: 0.78rem !important;
+      letter-spacing: .18em !important;
+      text-transform: uppercase !important;
+      color: var(--dim) !important;
+      font-weight: 400 !important;
+      margin: 0 0 6px !important;
+    }
+
+    .ml-wrapper .ml-form-embedContent p {
+      font-family: 'NewParisText', Georgia, serif !important;
+      font-weight: 300 !important;
+      font-size: 0.92rem !important;
+      color: var(--dim) !important;
+      line-height: 1.7 !important;
+      margin: 0 !important;
+    }
+
+    .ml-wrapper .ml-form-fieldRow {
+      padding: 0 !important;
+    }
+
+    .ml-wrapper .ml-field-group {
+      padding: 0 !important;
+    }
+
+    .ml-wrapper .ml-form-fieldRow input[type="email"],
+    .ml-wrapper .ml-form-fieldRow input[type="text"] {
+      font-family: 'NewParisText', Georgia, serif !important;
+      font-weight: 300 !important;
+      font-size: 0.95rem !important;
+      color: var(--text) !important;
+      background: transparent !important;
+      border: 1px solid var(--border) !important;
+      border-radius: 0 !important;
+      padding: 10px 12px !important;
+      width: 100% !important;
+      box-shadow: none !important;
+      outline: none !important;
+      transition: border-color .22s !important;
+    }
+
+    .ml-wrapper .ml-form-fieldRow input[type="email"]:focus,
+    .ml-wrapper .ml-form-fieldRow input[type="text"]:focus {
+      border-color: var(--accent) !important;
+    }
+
+    .ml-wrapper .ml-form-fieldRow input::placeholder {
+      color: var(--dim) !important;
+      opacity: .55 !important;
+    }
+
+    .ml-wrapper .ml-form-embedSubmit button {
+      font-family: 'NewParisSkyline', Georgia, serif !important;
+      font-size: 0.78rem !important;
+      letter-spacing: .18em !important;
+      text-transform: uppercase !important;
+      color: var(--bg) !important;
+      background: var(--accent) !important;
+      border: 1px solid var(--accent) !important;
+      border-radius: 0 !important;
+      padding: 12px 32px !important;
+      cursor: pointer !important;
+      transition: background .24s, color .24s, border-color .24s !important;
+      box-shadow: none !important;
+      width: auto !important;
+    }
+
+    .ml-wrapper .ml-form-embedSubmit button:hover {
+      background: transparent !important;
+      color: var(--accent) !important;
+    }
+
+    .ml-wrapper .ml-form-successBody {
+      background: transparent !important;
+      padding: 0 !important;
+    }
+
+    .ml-wrapper .ml-form-successBody p {
+      font-family: 'NewParisText', Georgia, serif !important;
+      font-weight: 300 !important;
+      font-size: 0.95rem !important;
+      color: var(--dim) !important;
+    }
+
+    .req {
+      font-family: 'NewParisText', Georgia, serif;
+      font-weight: 300;
+      font-size: 0.72rem;
+      color: var(--dim);
+      opacity: .6;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .form-error {
+      font-family: 'NewParisText', Georgia, serif;
+      font-weight: 300;
+      font-size: 0.85rem;
+      color: var(--accent);
+      min-height: 1.2em;
+      margin-top: -4px;
+    }
+
+    /* ── FOOTER ── */
+    .contact-footer {
+      margin-top: 100px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      animation: rise .72s .32s cubic-bezier(.4, 0, .2, 1) both;
+    }
+
+    .contact-footer span {
+      font-family: 'NewParisSkyline', Georgia, serif;
+      font-size: 0.74rem;
+      letter-spacing: .1em;
+      color: var(--dim);
+      opacity: .55;
+    }
+
+    /* ── THEME TOGGLE ── */
+    .theme-toggle {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 900;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--bg2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background .3s, border-color .3s, transform .22s;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.08);
+      border-color: var(--accent);
+    }
+
+    .theme-toggle svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--dim);
+      transition: fill .3s;
+    }
+
+    .theme-toggle:hover svg {
+      fill: var(--accent);
+    }
+
+    .theme-toggle .icon-sun {
+      display: none;
+      stroke: var(--dim);
+      fill: none;
+    }
+
+    [data-theme="dark"] .theme-toggle .icon-sun {
+      display: block;
+      stroke: var(--accent);
+      fill: none;
+    }
+
+    .theme-toggle .icon-moon {
+      display: block;
+    }
+
+    [data-theme="dark"] .theme-toggle .icon-moon {
+      display: none;
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width:768px) {
+      :root {
+        --nav-h: 64px;
+      }
+
+      nav {
+        padding: 0 24px;
+        column-gap: 16px;
+      }
+
+      .nav-logo {
+        font-size: 1.15rem;
+        letter-spacing: .1em;
+      }
+
+      .hamburger {
+        right: 24px;
+        padding: 10px 8px;
+      }
+
+      .hamburger span {
+        width: 20px;
+      }
+
+      .side-panel {
+        width: min(355px, 85vw);
+        padding: 80px 36px 44px;
+      }
+
+      .sp-name {
+        font-size: 1.12rem;
+        margin-bottom: 18px;
+      }
+
+      .sp-block {
+        font-size: .98rem;
+      }
+
+      .contact-page {
+        padding: calc(var(--nav-h) + 48px) 24px 80px;
+      }
+
+      .contact-title {
+        font-size: 2.2rem;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width:480px) {
+      :root {
+        --nav-h: 56px;
+      }
+
+      nav {
+        padding: 0 18px;
+        column-gap: 10px;
+      }
+
+      .nav-logo {
+        font-size: 1rem;
+        letter-spacing: .08em;
+      }
+
+      .hamburger {
+        right: 18px;
+        padding: 12px 10px;
+      }
+
+      .side-panel {
+        width: 100vw;
+        padding: 70px 24px 32px;
+        padding-bottom: max(32px, env(safe-area-inset-bottom));
+      }
+
+      .sp-name {
+        font-size: 1.05rem;
+        margin-bottom: 16px;
+      }
+
+      .sp-rule {
+        margin-bottom: 20px;
+      }
+
+      .sp-label {
+        font-size: .78rem;
+      }
+
+      .sp-block {
+        font-size: .92rem;
+        line-height: 1.75;
+        margin-bottom: 18px;
+      }
+
+      .sp-social {
+        gap: 22px;
+        padding-top: 22px;
+      }
+
+      .sp-social svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      .contact-page {
+        padding: calc(var(--nav-h) + 36px) 18px 64px;
+      }
+
+      .contact-title {
+        font-size: 1.8rem;
+        letter-spacing: .06em;
+      }
+
+      .contact-rule {
+        width: 26px;
+        margin-bottom: 36px;
+      }
+
+      .info-name {
+        font-size: 1.3rem;
+      }
+
+      .form-submit {
+        width: 100%;
+        text-align: center;
+      }
+
+      .social-row {
+        gap: 12px;
+      }
+
+      .theme-toggle {
+        bottom: 20px;
+        right: 20px;
+        width: 38px;
+        height: 38px;
+      }
+
+      .theme-toggle svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    @media (max-width:360px) {
+      nav {
+        padding: 0 14px;
+      }
+
+      .nav-logo {
+        font-size: .9rem;
+      }
+
+      .hamburger {
+        right: 14px;
+      }
+
+      .side-panel {
+        padding: 64px 20px 28px;
+      }
+
+      .sp-name {
+        font-size: 1rem;
+      }
+
+      .contact-page {
+        padding: calc(var(--nav-h) + 28px) 14px 52px;
+      }
+
+      .contact-title {
+        font-size: 1.55rem;
+      }
+
+      .theme-toggle {
+        bottom: 16px;
+        right: 16px;
+        width: 36px;
+        height: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="overlay" id="overlay"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Orkay Pazarcı</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a href="works.html">Works</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="side-panel" id="sidePanel">
+    <div class="sp-name">Orkay Pazarcı</div>
+    <div class="sp-rule"></div>
+
+    <div class="sp-nav">
+      <a href="index.html">Home</a>
+      <a href="biography.html">Biography</a>
+      <a href="works.html">Works</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+
+    <div class="sp-label">About</div>
+    <div class="sp-block">Istanbul-Based Composer</div>
+
+    <div class="sp-label">Education</div>
+    <div class="sp-block">
+      Istanbul Topkapi University<br>
+      BA in Composition (Present)
+    </div>
+
+    <div class="sp-label">Contact</div>
+    <div class="sp-block last">
+      <a href="mailto:trorkaypazarci@gmail.com">trorkaypazarci@gmail.com</a>
+    </div>
+
+    <div class="sp-social">
+      <a href="https://soundcloud.com/orkaypazarci" target="_blank" rel="noopener" aria-label="SoundCloud">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M23.999 14.165c-.052 1.796-1.612 3.169-3.4 3.169h-8.18a.68.68 0 0 1-.675-.683V7.862a.747.747 0 0 1 .452-.724s.75-.513 2.333-.513a5.364 5.364 0 0 1 2.763.755 5.433 5.433 0 0 1 2.57 3.54c.282-.08.574-.121.868-.12.884 0 1.73.358 2.347.992s.948 1.49.922 2.373ZM10.721 8.421c.247 2.98.427 5.697 0 8.672a.264.264 0 0 1-.53 0c-.395-2.946-.22-5.718 0-8.672a.264.264 0 0 1 .53 0ZM9.072 9.448c.285 2.659.37 4.986-.006 7.655a.277.277 0 0 1-.55 0c-.331-2.63-.256-5.02 0-7.655a.277.277 0 0 1 .556 0Zm-1.663-.257c.27 2.726.39 5.171 0 7.904a.266.266 0 0 1-.532 0c-.38-2.69-.257-5.21 0-7.904a.266.266 0 0 1 .532 0Zm-1.647.77a26.108 26.108 0 0 1-.008 7.147.272.272 0 0 1-.542 0 27.955 27.955 0 0 1 0-7.147.275.275 0 0 1 .55 0Zm-1.67 1.769c.421 1.865.228 3.5-.029 5.388a.257.257 0 0 1-.514 0c-.21-1.858-.398-3.549 0-5.389a.272.272 0 0 1 .543 0Zm-1.655-.273c.388 1.897.26 3.508-.01 5.412-.026.28-.514.283-.54 0-.244-1.878-.347-3.54-.01-5.412a.283.283 0 0 1 .56 0Zm-1.668.911c.4 1.268.257 2.292-.026 3.572a.257.257 0 0 1-.514 0c-.241-1.262-.354-2.312-.023-3.572a.283.283 0 0 1 .563 0Z" />
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/@orkaypazarci" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/orkaypazarci/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ── CONTACT CONTENT ── -->
+  <main class="contact-page">
+
+    <h1 class="contact-title">Contact</h1>
+    <div class="contact-rule"></div>
+
+
+    <!-- ① HIRE FORM -->
+    <section class="contact-section">
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cf-name">Name <span class="req">(required)</span></label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name" required />
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Email <span class="req">(required)</span></label>
+            <input type="email" id="cf-email" name="email" placeholder="your@email.com" autocomplete="email" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="cf-subject">Subject</label>
+          <select id="cf-subject" name="subject">
+            <option value="" disabled selected>Select a subject</option>
+            <option value="Commission / New Work">Commission / New Work</option>
+            <option value="Performance Rights">Performance Rights</option>
+            <option value="Score / Recording">Score / Recording</option>
+            <option value="Press &amp; Media">Press &amp; Media</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="cf-message">Message <span class="req">(required)</span></label>
+          <textarea id="cf-message" name="message" placeholder="Write your message here…" required></textarea>
+        </div>
+
+        <div class="form-error" id="formError"></div>
+
+        <!-- Honeypot: invisible to humans, bots fill it → Formspree rejects automatically -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+        <!-- Custom subject line in the notification email -->
+        <input type="hidden" name="_subject" value="New message from orkay pazarci site" />
+
+        <button type="submit" class="form-submit">Submit</button>
+      </form>
+    </section>
+
+
+    <!-- ② SUBSCRIBE -->
+    <section class="contact-section">
+      <div class="section-divider"></div>
+
+      <p class="subscribe-desc">Sign up with your email address to receive news and updates.</p>
+      <div class="subscribe-row">
+        <input class="subscribe-input" type="email" id="sub-email" placeholder="Enter your email here" autocomplete="email" />
+        <button class="subscribe-btn" type="button" id="subBtn">Subscribe &rarr;</button>
+      </div>
+      <p class="sub-feedback" id="subFeedback"></p>
+
+      <!-- MailerLite embedded form — hidden, used only for submission -->
+      <div style="position:absolute;left:-9999px;top:-9999px;visibility:hidden;pointer-events:none;" aria-hidden="true">
+        <div class="ml-embedded" data-form="39mw63"></div>
+      </div>
+    </section>
+
+
+    <!-- ③ CONTACT INFO -->
+    <section class="contact-section" style="margin-bottom: 0;">
+      <div class="section-divider"></div>
+
+      <div class="contact-box-col">
+        <a class="contact-box-email" href="mailto:trorkaypazarci@gmail.com">
+          trorkaypazarci@gmail.com
+        </a>
+        <div class="contact-socials-row">
+          <a class="contact-box-social" href="https://soundcloud.com/orkaypazarci" target="_blank" rel="noopener">SoundCloud</a>
+          <a class="contact-box-social" href="https://www.youtube.com/@orkaypazarci" target="_blank" rel="noopener">YouTube</a>
+          <a class="contact-box-social" href="https://www.instagram.com/orkaypazarci/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="contact-footer">
+      <span>© 2026 Orkay Pazarcı</span>
+    </div>
+
+  </main>
+
+
+  <!-- ── THEME TOGGLE ── -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <svg class="icon-moon" viewBox="0 0 24 24">
+      <path
+        d="M21.752 15.002A9.718 9.718 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+    </svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </button>
+
+
+  <script>
+    /* ── Side Panel ── */
+    const btn = document.getElementById('hamburgerBtn');
+    const panel = document.getElementById('sidePanel');
+    const overlay = document.getElementById('overlay');
+    function openPanel() { panel.classList.add('open'); overlay.classList.add('active'); btn.classList.add('open'); }
+    function closePanel() { panel.classList.remove('open'); overlay.classList.remove('active'); btn.classList.remove('open'); }
+    btn.addEventListener('click', () => panel.classList.contains('open') ? closePanel() : openPanel());
+    overlay.addEventListener('click', closePanel);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closePanel(); });
+
+    /* ── Theme Toggle ── */
+    const toggle = document.getElementById('themeToggle');
+    function isDarkNow() { return document.documentElement.getAttribute('data-theme') === 'dark'; }
+    function syncLinks() {
+      const t = isDarkNow() ? 'dark' : 'light';
+      document.querySelectorAll('a[href]').forEach(a => {
+        const h = a.getAttribute('href');
+        if (!h || h.startsWith('#') || h.startsWith('mailto:') || h.startsWith('http')) return;
+        const base = h.split('?')[0];
+        a.setAttribute('href', base + '?theme=' + t);
+      });
+    }
+    syncLinks();
+    toggle.addEventListener('click', () => {
+      if (isDarkNow()) {
+        document.documentElement.removeAttribute('data-theme');
+        try { localStorage.setItem('theme', 'light'); } catch (e) { }
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        try { localStorage.setItem('theme', 'dark'); } catch (e) { }
+      }
+      syncLinks();
+    });
+
+    /* ── Form validation ── */
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('cf-name');
+      const email = document.getElementById('cf-email');
+      const message = document.getElementById('cf-message');
+      const errorEl = document.getElementById('formError');
+
+      errorEl.textContent = '';
+
+      if (!name.value.trim()) {
+        errorEl.textContent = 'Please enter your name.';
+        name.focus();
+        return;
+      }
+      if (!email.value.trim() || !email.value.includes('@')) {
+        errorEl.textContent = 'Please enter a valid email address.';
+        email.focus();
+        return;
+      }
+      if (!message.value.trim()) {
+        errorEl.textContent = 'Please write a message.';
+        message.focus();
+        return;
+      }
+
+      /* ── Formspree submission ── */
+      const btn = this.querySelector('.form-submit');
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+
+      /* Set dynamic subject line */
+      const subjectEl = document.getElementById('cf-subject');
+      const subjectLabel = subjectEl.value || 'General Inquiry';
+      const hiddenSubject = this.querySelector('input[name="_subject"]');
+      if (hiddenSubject) hiddenSubject.value = 'Contact — ' + subjectLabel;
+
+      fetch('https://formspree.io/f/xqegayzz', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(this)
+      })
+      .then(res => {
+        if (res.ok) {
+          errorEl.style.color = 'var(--dim)';
+          errorEl.textContent = 'Message sent. Thank you for reaching out.';
+          this.reset();
+        } else {
+          return res.json().then(data => {
+            errorEl.style.color = 'var(--accent)';
+            errorEl.textContent = data.error || 'Something went wrong. Please try again.';
+          });
+        }
+      })
+      .catch(() => {
+        errorEl.style.color = 'var(--accent)';
+        errorEl.textContent = 'Network error. Please try again.';
+      })
+      .finally(() => {
+        btn.disabled = false;
+        btn.textContent = 'Submit';
+      });
+    });
+
+    /* ── Subscribe → MailerLite bridge ── */
+    document.getElementById('subBtn').addEventListener('click', () => {
+      const input    = document.getElementById('sub-email');
+      const feedback = document.getElementById('subFeedback');
+      const email    = input.value.trim();
+
+      feedback.textContent = '';
+      feedback.style.color = '';
+
+      if (!email || !email.includes('@')) {
+        input.focus();
+        feedback.textContent = 'Please enter a valid email address.';
+        feedback.style.color = 'var(--accent)';
+        return;
+      }
+
+      /* Find the hidden MailerLite email field and submit button */
+      const mlForm    = document.querySelector('[aria-hidden="true"] .ml-embedded');
+      const mlInput   = mlForm && mlForm.querySelector('input[type="email"]');
+      const mlSubmit  = mlForm && mlForm.querySelector('button[type="submit"], .ml-form-embedSubmit button');
+
+      if (mlInput && mlSubmit) {
+        /* Populate the ML input and fire native events so MailerLite validates */
+        mlInput.value = email;
+        mlInput.dispatchEvent(new Event('input', { bubbles: true }));
+        mlInput.dispatchEvent(new Event('change', { bubbles: true }));
+        mlSubmit.click();
+
+        /* Show confirmation in our own UI */
+        input.value = '';
+        feedback.textContent = 'Thank you for subscribing!';
+        feedback.style.color = 'var(--dim)';
+      } else {
+        /* MailerLite script not yet ready — fallback */
+        feedback.textContent = 'Something went wrong. Please try again in a moment.';
+        feedback.style.color = 'var(--accent)';
+      }
+    });
+  </script>
+
+</body>
+
+</html>
