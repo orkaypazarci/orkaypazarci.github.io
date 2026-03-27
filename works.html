@@ -7,7 +7,7 @@
   <title>Works — Orkay Pazarcı</title>
   <meta name="description"
     content="Works of Orkay Pazarcı — Istanbul-based composer bridging Eastern and Western traditions." />
-  <script>(function () { var p = new URLSearchParams(window.location.search), t = p.get('theme'); if (t === 'dark') { document.documentElement.setAttribute('data-theme', 'dark') } else if (t === 'light') { document.documentElement.removeAttribute('data-theme') } else { try { if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark') } catch (e) { } } })()</script>
+  <script>(function(){var p=new URLSearchParams(window.location.search),t=p.get('theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');try{localStorage.setItem('theme','dark')}catch(e){}}else if(t==='light'){document.documentElement.removeAttribute('data-theme');try{localStorage.setItem('theme','light')}catch(e){}}else{try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}}try{var c=window.location.pathname.replace(/\/index\.html$/,'/').replace(/\.html$/,'');history.replaceState(null,'',c)}catch(e){}})()</script>
 
   <style>
     /* ── NEWPARIS FONT FAMILY ── */
@@ -117,6 +117,10 @@
 
     html {
       scroll-behavior: smooth;
+    }
+
+    html, body {
+      overflow-x: hidden;
     }
 
     body {
@@ -1095,24 +1099,19 @@
     const btn = document.getElementById('hamburgerBtn');
     const panel = document.getElementById('sidePanel');
     const overlay = document.getElementById('overlay');
-    function openPanel() { panel.classList.add('open'); overlay.classList.add('active'); btn.classList.add('open'); document.body.style.overflow = 'hidden'; }
-    function closePanel() { panel.classList.remove('open'); overlay.classList.remove('active'); btn.classList.remove('open'); document.body.style.overflow = ''; }
+    function openPanel() { panel.classList.add('open'); overlay.classList.add('active'); btn.classList.add('open'); document.body.style.overflow = 'hidden'; document.body.style.overflowX = 'hidden'; }
+    function closePanel() { panel.classList.remove('open'); overlay.classList.remove('active'); btn.classList.remove('open'); document.body.style.overflow = ''; document.body.style.overflowX = ''; }
     btn.addEventListener('click', () => panel.classList.contains('open') ? closePanel() : openPanel());
     overlay.addEventListener('click', closePanel);
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closePanel(); });
 
+    /* ── Theme Toggle ── */
     const toggle = document.getElementById('themeToggle');
-    function isDarkNow() { return document.documentElement.getAttribute('data-theme') === 'dark'; }
-    function syncLinks() {
-      const t = isDarkNow() ? 'dark' : 'light';
-      document.querySelectorAll('a[href]').forEach(a => {
-        const h = a.getAttribute('href');
-        if (!h || h.startsWith('#') || h.startsWith('mailto:') || h.startsWith('http')) return;
-        const base = h.split('?')[0];
-        a.setAttribute('href', base + '?theme=' + t);
-      });
+
+    function isDarkNow() {
+      return document.documentElement.getAttribute('data-theme') === 'dark';
     }
-    syncLinks();
+
     toggle.addEventListener('click', () => {
       if (isDarkNow()) {
         document.documentElement.removeAttribute('data-theme');
@@ -1121,7 +1120,6 @@
         document.documentElement.setAttribute('data-theme', 'dark');
         try { localStorage.setItem('theme', 'dark'); } catch (e) { }
       }
-      syncLinks();
     });
   </script>
 

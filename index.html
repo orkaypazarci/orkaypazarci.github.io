@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Orkay Pazarcı — Composer</title>
-  <script>(function () { var p = new URLSearchParams(window.location.search), t = p.get('theme'); if (t === 'dark') { document.documentElement.setAttribute('data-theme', 'dark') } else if (t === 'light') { document.documentElement.removeAttribute('data-theme') } else { try { if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark') } catch (e) { } } })()</script>
+  <script>(function(){var p=new URLSearchParams(window.location.search),t=p.get('theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');try{localStorage.setItem('theme','dark')}catch(e){}}else if(t==='light'){document.documentElement.removeAttribute('data-theme');try{localStorage.setItem('theme','light')}catch(e){}}else{try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}}try{var c=window.location.pathname.replace(/\/index\.html$/,'/').replace(/\.html$/,'');history.replaceState(null,'',c)}catch(e){}})()</script>
   <style>
     /* ── NEWPARIS FONT FAMILY ── */
     @font-face {
@@ -114,6 +114,10 @@
       scroll-behavior: smooth;
     }
 
+    html, body {
+      overflow-x: hidden;
+    }
+
     body {
       background: var(--bg);
       color: var(--text);
@@ -150,6 +154,8 @@
       padding: 0 44px;
       height: var(--nav-h);
       pointer-events: none;
+      background: var(--bg);
+      transition: background .4s;
     }
 
     .nav-logo {
@@ -957,18 +963,6 @@
       return document.documentElement.getAttribute('data-theme') === 'dark';
     }
 
-    function syncLinks() {
-      const t = isDarkNow() ? 'dark' : 'light';
-      document.querySelectorAll('a[href]').forEach(a => {
-        const h = a.getAttribute('href');
-        if (!h || h.startsWith('#') || h.startsWith('mailto:') || h.startsWith('http')) return;
-        const base = h.split('?')[0];
-        a.setAttribute('href', base + '?theme=' + t);
-      });
-    }
-
-    syncLinks();
-
     toggle.addEventListener('click', () => {
       if (isDarkNow()) {
         document.documentElement.removeAttribute('data-theme');
@@ -977,7 +971,6 @@
         document.documentElement.setAttribute('data-theme', 'dark');
         try { localStorage.setItem('theme', 'dark'); } catch (e) { }
       }
-      syncLinks();
     });
   </script>
 </body>
